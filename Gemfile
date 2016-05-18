@@ -14,6 +14,7 @@ gem 'react-rails'
 gem 'devise'
 gem 'bootstrap-glyphicons'
 gem 'font-awesome-rails'
+gem 'simple_form'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
