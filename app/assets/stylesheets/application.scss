@@ -1,4 +1,17 @@
+@import "bootstrap-override";
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import 'bootstrap/glyphicons';
 @import "font-awesome";
+@import "form-styles";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  min-height: 700px;
+}
