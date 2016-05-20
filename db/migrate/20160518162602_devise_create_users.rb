@@ -1,6 +1,24 @@
 class DeviseCreateUsers < ActiveRecord::Migration
   def change
     create_table :users do |t|
+      ## Non-devise user fields
+      t.string  :first_name
+      t.string  :last_name
+      t.string  :username
+      t.boolean :admin_flag,  default: false
+      t.date    :start_date
+      t.date    :end_date
+      t.integer :ssnit
+      t.string  :id_type
+      t.integer :id_num
+      t.string  :bank_accnt_num
+      t.string  :emg_contact_name
+      t.string  :phone_num
+      t.string  :emg_contact_phone_num
+      t.string  :nationality,   default: "Ghana"
+      t.string  :other_names
+      t.boolean :bank_accnt_flag, default: false 
+
       ## Database authenticatable
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
