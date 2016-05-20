@@ -9,15 +9,17 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'bootstrap-sass', '~> 3.3.6'
-gem 'react-rails'
-gem 'devise'
+gem 'bootstrap-sass', '~> 3.3.6'              ##  css and sass styling framework
+gem 'react-rails'                             ##  reactjs javascript front end library
+gem 'devise'                                  ##  rails authentication gem
 gem 'bootstrap-glyphicons'
-gem 'font-awesome-rails'
-gem 'simple_form'
+gem 'font-awesome-rails'                      ##  font awesome icons
+gem 'simple_form'                             ##  for making forms easier to handle
+gem 'fullcalendar-rails'                      ##  rails calendar gem
+gem 'momentjs-rails'                          ##  javascript dependency gem for fullcalendar
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-rails', '~> 3.0'                 ##  for testing in rails
   gem 'byebug'
 end
 
