@@ -29,10 +29,11 @@ The payroll-360 application is delevoped to make access to employee information 
     rake db:create db:migrate db:seed
 ```
 
-- Create an .env file for storing secret keys in your application's directory
+- Create an .env file for storing secret keys in your application's directory and install foreman
 
 ```
     touch .env
+    gem install foreman
 ```
 
 - Open your .env file and define the following keys
